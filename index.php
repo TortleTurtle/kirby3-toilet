@@ -133,7 +133,7 @@ Kirby::plugin('sietseveenman/kirby3-toilet', [
             [
                 'pattern' => 'remove-dump/(:num)',
                 'method' => 'POST',
-                'action'  => function (string $timestamp = null) {
+                'action'  => function (string | null $timestamp = null) {
 
                     $toilet = kirby()->root('site').'/toilet';
 
